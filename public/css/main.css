@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+.main {
+    text-align: center;
+}
+p {
+    font-family: "Noto Sans KR", sans-serif;
+}
+.betContainer {
+    display: block;
+    position: relative;
+    z-index: 10;
+    clear: both;
+}
+.betdiv {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    border: 1px solid #afafaf;
+    margin: 10px auto 0px auto;
+    border-radius: 5px;
+    cursor: default;
+}
+.betdiv .null {
+    float: left;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.betdiv .betsubdiv {
+    float: left;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.betdiv .betsubdiv .betTitle {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.betdiv .betsubdiv .betDate {
+    margin-top: 2px;
+    font-size: 14px;
+}
+.betdiv .betsubdiv2 {
+    float: right;
+    margin-right: 10px;
+    margin-top: 7px;
+    text-align: right;
+}
+.betdiv .betsubdiv2 .betNum {
+    font-size: 14px;
+    font-weight: 500;
+}
+.betdiv .betsubdiv2 .betProgress{
+    margin-top: -10px;
+}
+.betdiv .betDown {
+    float: right;
+    width: 30px;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    transform: rotateZ(270deg);
+}
+.betdiv .betDown:hover {
+    transition: 0.5s;
+    transform: rotateZ(90deg);
+}
+
+.betProgress {
+    border-radius: 10px; 
+    width: 80px;
+    height: 8px;
+    box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+}
+.betProgress::-webkit-progress-bar {
+    background-color: #FF447D;
+    border-radius: 10px;
+}
+.betProgress::-webkit-progress-value {
+    background-color: #1F69FF;
+    border-radius: 10px;
+
+}
+.betDetail {
+    width: 78%;
+    position: absolute;
+    z-index: -10;
+    left: 11%;
+    top: 65px;
+    margin: 0 auto;
+    padding: 2px;
+    border: 1px solid #afafaf;
+    border-radius: 5px;
+}
+
+.betDetail .betVsContainer {
+    position: static;
+    width: 90%;
+    height: 100px;
+    background-color: #dbdbdb !important;
+    border: 2px solid #dbdbdb;
+    border-radius: 10px;
+    margin: 20px auto 0 auto;
+}
+.betDetail .betVsContainer h2 {
+    background-color: #dbdbdb !important;
+    font-size: 35px;
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+.betDetail .betVsContainer .betIsFinish {
+    background-color: #dbdbdb !important;
+    margin-top: 15px;
+    color: #616161;
+    font-weight: 600;
+}
+
+.betDetail .betDetailMain {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.betDetail .betDetailMain div {
+    float: left;
+    width: 48%;
+}
+.betDetail .betDetailMain .hr {
+    float: left;
+    width: 2px;
+    height: 180px;
+    background-color: #afafaf;
+    margin-bottom: 20px;
+}
+.betDetail .betDetailMain .betTextSide {
+    width: 100%;
+}
+.betDetail .betDetailMain .betLeftSide .betTextSide .betDetailText{
+    width: fit-content;
+    float: left;
+    text-align: left;
+    margin-left: 50px;
+    font-size: 18px;
+}
+.betDetail .betDetailMain .betLeftSide .betTextSide .betPercent {
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.betDetail .betDetailMain .betLeftSide .betTextSide .betPercent .betPercentText {
+    font-size: 55px;
+    font-weight: 900;
+    color: #1F69FF;
+}
+.betProgressLeft {
+    width: 120px;
+    height: 15px;
+    transform: rotateZ(180deg);
+}
+.betProgressLeft::-webkit-progress-bar {
+    background-color: #fff;
+}
+.betProgressLeft::-webkit-progress-value {
+    background-color: #1F69FF;
+}
+.betDetail .betDetailMain .betLeftSide .betVote {
+    position: relative;
+    float: right;
+    width: 200px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border: 1px solid #afafaf;
+    border-right: none;
+    border-radius: 3px;
+}
+
+.betDetail .betDetailMain .betLeftSide .betVote .betVoteInput {
+    float: left;
+    padding: 5px 0px 5px 5px;
+    border: none;
+    width: 195px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: 400;
+    outline-style: none;
+    outline: none;
+    line-height: normal;
+}
+
+.betDetail .betDetailMain .betLeftSide .betVote .betVoteButton {
+    position: absolute;
+    right: 0px;
+    width: 40px;
+    height: 25px;
+    color: #fff;
+    background-color: #1F69FF;
+    border: none;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
+/** RIGHT SIDE **/
+
+.betDetail .betDetailMain .betRightSide .betTextSide .betDetailText{
+    width: fit-content;
+    float: right;
+    text-align: left;
+    margin-left: 50px;
+    font-size: 18px;
+}
+.betDetail .betDetailMain .betRightSide .betTextSide .betPercent {
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.betDetail .betDetailMain .betRightSide .betTextSide .betPercent .betPercentText {
+    font-size: 55px;
+    font-weight: 900;
+    color: #FF447D;
+}
+.betProgressRight {
+    width: 120px;
+    height: 15px;
+}
+.betProgressRight::-webkit-progress-bar {
+    background-color: #fff;
+}
+.betProgressRight::-webkit-progress-value {
+    background-color: #FF447D;
+}
+.betDetail .betDetailMain .betRightSide .betVote {
+    position: relative;
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border: 1px solid #afafaf;
+    border-right: none;
+    border-radius: 3px;
+}
+
+.betDetail .betDetailMain .betRightSide .betVote .betVoteInput {
+    float: left;
+    padding: 5px 0px 5px 5px;
+    border: none;
+    width: 195px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: 400;
+    outline-style: none;
+    outline: none;
+    line-height: normal;
+}
+
+.betDetail .betDetailMain .betRightSide .betVote .betVoteButton {
+    position: absolute;
+    right: 0px;
+    width: 40px;
+    height: 25px;
+    color: #fff;
+    background-color: #FF447D;
+    border: none;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
