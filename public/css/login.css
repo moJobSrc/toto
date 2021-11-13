@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 .login {
     text-align: center;
 }
@@ -18,18 +22,33 @@
     flex-direction: column;
 }
 
-#loginform input {
-    display: inline-block;
-    font-family: 'Noto Sans KR' sans-serif;
-    font-weight: 500;
-    border: 2px solid #afafaf;
+#loginform .inputdiv {
+    display: block;
+    border: 1px solid #afafaf;
     width: 400px;
     height: 40px;
+    border-radius: 6px;
+}
+#loginform .inputdiv img {
+    float: left;
+    width: 20px;
+    height: 24px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+#loginform .inputdiv input {
+    display: inline-block;
+    float: left;
+    width: 340px;
+    font-family: 'Noto Sans KR'sans-serif;
+    font-weight: 800;
+    height: 36px;
+    margin-left: 10px;
     margin-bottom: 4px;
-    line-height: normal;
     outline-style: none;
     outline: none;
-    border-radius: 6px;
+    line-height: normal;
+    border: 0px solid #333;
 }
 
 #loginform :nth-child(1) {
@@ -42,7 +61,7 @@
     margin-top: 15px;
     justify-content: space-between;
 }
-  
+
 .loginbuttons button {
     display: inline-block;
     width: 150px;
@@ -56,7 +75,8 @@
     background-color: #5D00FF;
     color: #FFF;
 }
-  
+
+
 .loginbuttons #registerBtn {
     background-color: #FFF;
     color: #5D00FF;
@@ -67,4 +87,8 @@
     font-size: 15px;
     font-weight: 300;
     color: #757575;
+}
+
+#findPw:hover {
+    text-decoration: underline #757575;
 }
